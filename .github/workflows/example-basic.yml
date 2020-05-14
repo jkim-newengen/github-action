@@ -19,27 +19,3 @@ jobs:
           # print information about detected browsers, etc
           # see https://on.cypress.io/command-line#cypress-info
           build: npx cypress info
-
-  basic-on-windows:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: examples/basic
-          build: npx cypress info
-
-  basic-on-mac:
-    runs-on: macos-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: examples/basic
-          build: npx cypress info
