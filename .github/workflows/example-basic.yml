@@ -2,7 +2,7 @@ name: example-basic
 on: [push]
 jobs:
   basic:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v1
